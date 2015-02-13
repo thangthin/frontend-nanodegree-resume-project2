@@ -1,9 +1,40 @@
 function bioDisplay(){
 	console.log("This is the bioDisplay getting called");
+	var formattedName = HTMLheaderName.replace("%data%",bio.name);
+	var formattedRole = HTMLheaderRole.replace("%data%",bio.role);
+	var formattedWelcomeMsg = HTMLWelcomeMsg.replace("%data%",bio.welcomeMessage);
+	var formattedEmail = HTMLemail.replace("%data%",bio.contacts.email);
+	var formattedGithub = HTMLgithub.replace("%data%",bio.contacts.github);
+	var formattedLocation = HTMLlocation.replace("%data%",bio.contacts.location);
+	var formattedBioPic = HTMLbioPic.replace("%data%",bio.biopic);
+
+	$("#header").prepend(formattedRole);
+	$("#header").prepend(formattedName);
+	$("#topContacts").append(formattedEmail);
+	$("#topContacts").append(formattedGithub);
+	$("#topContacts").append(formattedLocation);
+	$("#header").append(formattedBioPic);
+	$("#header").append(formattedWelcomeMsg);
+
+	if(bio.skills.length > 0) {
+  	$("#header").append(HTMLskillsStart);
+  	for(skill in bio.skills) {
+    	var formattedSkill = HTMLskills.replace('%data%', bio.skills[skill]);
+    	$("#skills").append(formattedSkill);
+  	}
+	}
 }
 
 function educationDisplay(){
 	console.log("This is the educationDisplay getting called");
+	if(education.schools.length > 0) {
+		$("#education").append(HTMLschoolStart);
+		for(school in education.schools){
+			var formattedSchoolName = HTMLschoolName.replace("%data%", education.schools[school].name);
+			$(".education-entry:last").append(formattedSchoolName);
+		}
+	}
+
 }
 
 function workDisplay(){
@@ -27,7 +58,7 @@ var bio = {
 	welcomeMessage:"Welcome to Thang's Resume",
 	skills:["saving the world","breaking things","building things",
 						"solving easy problems"],
-	biopic:"images//fred.jpg",
+	biopic:"images/fry.jpg",
 	display: bioDisplay
 };
 
@@ -125,7 +156,7 @@ var projects = {
 	display: projectsDisplay
 };
 
-
-
+bio.display();
+education.display();
 
 
