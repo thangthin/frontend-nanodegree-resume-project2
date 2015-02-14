@@ -4,14 +4,13 @@ var bio = {
   role:"Web Developer",
   contacts:{
     mobile:"123-123-1234",
-    email:"testthang@gmail.com",
+    email:"thang@example.com",
     github:"https://github.com/thangthin",
     twitter:"@notwitter",
     location:"Boston, MA"
   },
   welcomeMessage:"Welcome to Thang's Resume",
-  skills:["saving the world","breaking things","building things",
-            "solving easy problems"],
+  skills:["awesomeness","delivering things","cryogenic sleep", "saving the universe"],
   biopic:"images/fry.jpg",
 };
 
@@ -132,18 +131,18 @@ education.display = function(){
 var work = {
   jobs: [
     {
-      employer:"Raytheon Integrated Air Defense",
-      title:"System Security Analys I",
-      location:"Andover, MA",
-      dates: "2011-2013",
-      description: "Industrial compliance and performed system security auditing functionality"
+      employer:"Planet Express",
+      title:"Delivery Boy",
+      location:"Brooklyn, NY",
+      dates: "January 3000 - Future",
+      description: "Who moved my cheese cheesy feet cauliflower chees. Queso taleggio when the cheese comes out everybody's happy airdale ricotta cheese and wine paneer camember de normandie. Swiss mazzarella cheese slices feta fromage fraise airdale swiss cheesecake. Hard cheese blue castello halloumi parmesan say cheese stinking bishop jarlsberg."
     },
     {
-      employer:"Raytheon Missile Defense Center",
-      title:"System Security Analys II",
-      location:"Andover, MA",
-      dates: "2013-2014",
-      description: "Team lead for classified program Industrial security compliance and performed security auditing"
+      employer:"Planet Express",
+      title:"Delivery Boy",
+      location:"Manhattan, NY",
+      dates: "1998 - December 31, 1999",
+      description: "Who moved my cheese cheesy feet cauliflower chees. Queso taleggio when the cheese comes out everybody's happy airdale ricotta cheese and wine paneer camember de normandie. Swiss mazzarella cheese slices feta fromage fraise airdale swiss cheesecake. Hard cheese blue castello halloumi parmesan say cheese stinking bishop jarlsberg."
     }
   ]
 };
@@ -175,13 +174,13 @@ var projects = {
     {
       title:"Community Fund",
       dates:"2014",
-      description:"Ruby on Rails project utilizing CRUD features to showcase existing open source website currently online.",
-      images:["images/fry.jpg","images/fry.jpg"]
+      description:"Who moved my cheese cheesy feet cauliflower chees. Queso taleggio when the cheese comes out everybody's happy airdale ricotta cheese and wine paneer camember de normandie. Swiss mazzarella cheese slices feta fromage fraise airdale swiss cheesecake. Hard cheese blue castello halloumi parmesan say cheese stinking bishop jarlsberg.",
+      images:["images/fry.jpg"]
     },
     {
       title:"Community Fund",
       dates:"2014",
-      description:"Ruby on Rails project utilizing CRUD features to showcase existing open source website currently online.",
+      description:"Who moved my cheese cheesy feet cauliflower chees. Queso taleggio when the cheese comes out everybody's happy airdale ricotta cheese and wine paneer camember de normandie. Swiss mazzarella cheese slices feta fromage fraise airdale swiss cheesecake. Hard cheese blue castello halloumi parmesan say cheese stinking bishop jarlsberg.",
       images:["images/fry.jpg","images/fry.jpg"]
     }
   ]
@@ -218,3 +217,4 @@ projects.display();
 
 
 $("#mapDiv").append(googleMap);
+
