@@ -63,18 +63,21 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
     </div>
     <div style='clear: both;'></div>
     <div id="workExperience" class='gray'>
-      <h2>Work Experience</h2>
+      <h2 id="work-section"><a class='section-title' href="#" onclick="return false">Work Experience</a></h2>
+      <hr/>
     </div>
     <div id="projects">
-      <h2>Projects</h2>
+      <h2 id='project-section'><a class='section-title' href='#' onclick="return false">Projects</a></h2>
+      <hr/>
     </div>
     <div id="education" class='gray'>
-      <h2>Education</h2>
+      <h2 id='education-section'><a class='section-title' href='#' onclick="return false">Education</a></h2>
+      <hr/>
     </div>
     <div id="mapDiv">
-      <h2>Where I've Lived and Worked</h2>
+      <h2 id='map-section'>Where I've Lived and Worked</h2>
     </div>
-    <div id="letsConnect" class='dark-gray'>
+    <div id="letsConnect" class='light-green'>
       <h2 class='orange center-text'>Let's Connect</h2>
         <ul id="footerContacts" class="flex-box">
       </ul>
@@ -119,7 +122,7 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
       document.getElementById('header').style.display = 'none';
     }
     if(document.getElementsByClassName('work-entry').length === 0) {
-      document.getElementById('workExperience').style.display = 'none';
+      //document.getElementById('workExperience').style.display = 'none';
     }
     if(document.getElementsByClassName('project-entry').length === 0) {
       document.getElementById('projects').style.display = 'none';
