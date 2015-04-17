@@ -1,17 +1,21 @@
 // Personal Bio section
+var PERSONAL_MESSAGE = "Hi! I'm an aspiring software developer. "+
+  "Having been exposed to how practical programming was in my previous job, "+
+  "I've decided to persue a career in it. My hope is to work in a position that will allow me to fullfill my natural interest in "+
+  "learning and building interesting things.";
+
 var bio = {
   name:"Thang Thin",
   role:"Web Developer",
   contacts:{
-    mobile:"123-123-1234",
-    email:"thang@example.com",
+    email:"thangthin@gmail.com",
     github:"https://github.com/thangthin",
     twitter:"@notwitter",
     location:"Boston, MA"
   },
-  welcomeMessage:"Welcome to Thang's Resume",
-  skills:["awesomeness","delivering things","cryogenic sleep", "saving the universe"],
-  biopic:"images/fry.jpg",
+  welcomeMessage: PERSONAL_MESSAGE,
+  skills:["programming","web development","web design", "software engineering"],
+  biopic:"images/profilepic.jpg",
 };
 
 // display bio section by format and add to html all the bio properties
@@ -21,22 +25,19 @@ bio.display = function(){
   var formattedName = HTMLheaderName.replace("%data%",this.name);
   var formattedRole = HTMLheaderRole.replace("%data%",this.role);
   var formattedWelcomeMsg = HTMLWelcomeMsg.replace("%data%",this.welcomeMessage);
-  var formattedMobile = HTMLmobile.replace("%data%",this.contacts.mobile);
   var formattedEmail = HTMLemail.replace("%data%",this.contacts.email);
   var formattedGithub = HTMLgithub.replace("%data%",this.contacts.github);
-  var formattedTwitter = HTMLtwitter.replace("%data%",this.contacts.twitter);
   var formattedLocation = HTMLlocation.replace("%data%",this.contacts.location);
   var formattedBioPic = HTMLbioPic.replace("%data%",this.biopic);
 
   $("#header").prepend(formattedRole);
   $("#header").prepend(formattedName);
-  $("#topContacts").append(formattedMobile);
   $("#topContacts").append(formattedEmail);
   $("#topContacts").append(formattedGithub);
-  $("#topContacts").append(formattedTwitter);
   $("#topContacts").append(formattedLocation);
   $("#header").append(formattedBioPic);
   $("#header").append(formattedWelcomeMsg);
+
 
   if(this.skills.length > 0) {
     $("#header").append(HTMLskillsStart);
@@ -45,6 +46,9 @@ bio.display = function(){
       $("#skills").append(formattedSkill);
     }
   }
+
+  $("#header").append(HTMLmenu);
+  $("#header").append(HTMLhr);
 };
 
 //display footer
