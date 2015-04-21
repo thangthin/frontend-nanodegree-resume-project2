@@ -51,16 +51,26 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
     <div id="header" class="center-content clearfix">
       <ul id="topContacts" class='flex-box'></ul>
     </div>
+    <nav class='menu shadow'>
+      <ul class='flex-box'>
+        <li class='flex-item'><a id='summary-link' class='nav-link' href='#'>Summary</a></li>
+        <li class='flex-item'><a id='work-link' class='nav-link' href='#'>Work</a></li>
+        <li class='flex-item'><a id='projects-link' class='nav-link' href='#'>Projects</a></li>
+        <li class='flex-item'><a id='education-link' class='nav-link' href='#'>Education</a></li>
+      </ul>
+    </nav>
     <div style='clear: both;'></div>
-    <div id="workExperience" class='gray'>
-      <h2 id="work-section"><a class='section-title' href="#" onclick="return false">Work Experience</a></h2>
-
+    <div id="summary" class='section'>
+      <h2 id="summary-section"><a class='section-title' href="#" onclick="return false">Summary</a></h2>
     </div>
-    <div id="projects">
+    <div id="workExperience" class='gray section'>
+      <h2 id="work-section"><a class='section-title' href="#" onclick="return false">Work Experience</a></h2>
+    </div>
+    <div id="projects" class='section'>
       <h2 id='project-section'><a class='section-title' href='#' onclick="return false">Projects</a></h2>
 
     </div>
-    <div id="education" class='gray'>
+    <div id="education" class='gray section'>
       <h2 id='education-section'><a class='section-title' href='#' onclick="return false">Education</a></h2>
 
     </div>

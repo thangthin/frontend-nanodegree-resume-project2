@@ -1,8 +1,14 @@
+
 // Personal Bio section
 var PERSONAL_MESSAGE = "Hi! I'm an aspiring software developer. "+
   "Having been exposed to how practical programming was in my previous job, "+
   "I've decided to persue a career in it. My hope is to work in a position that will allow me to fullfill my natural interest in "+
-  "learning and building interesting things.";
+  "learning and building fascinating things.";
+var SUMMARY = "I'm a web developer and a tinkerer. In my former role, I was a security analyst for a government contractor that deals with"+
+"compliance and system administration for classified systems. Having been exposed to how novel, practical and beautiful programming is, I've "+
+"decided to pursue it as a career. Since I've left my previous career, I've picked up web development, working with technologies such as html, css,"+
+"javascript, python, and fullstack development. Though I'm not where I want to be with my current skills set, I'm ready to contribute my skills " +
+"and learn from amazing developers."
 
 var bio = {
   name:"Thang Thin",
@@ -46,9 +52,8 @@ bio.display = function(){
       $("#skills").append(formattedSkill);
     }
   }
-
-  $("#header").append(HTMLmenu);
   $("#header").append(HTMLhr);
+
 };
 
 //display footer
@@ -66,6 +71,31 @@ bio.displayFooter = function(){
   $("#footerContacts").append(formattedTwitter);
   $("#footerContacts").append(formattedLocation);
 };
+
+// Summary Section
+var summary = {
+  synopsis: SUMMARY,
+  skills: [{set: "Programming Languages",
+            list: "scheme, c, ocaml, python, javascript"},
+           {set: "Web Technologies",
+            list: "html, css, knockout.js, bootstrap, angular.js"},
+           {set: "Operating Systems",
+            list: "Mac, Windows, Linux (ubuntu, redhat, centOS)"}]
+}
+
+summary.display = function(){
+  var formattedSynopsis = HTMLsummary.replace("%data%", this.synopsis);
+  $('#summary').append(formattedSynopsis);
+  $('#summary').append("<br>")
+  this.skills.forEach(function(e){
+    var formattedSkill = HTMLskillset.replace("%data%", e.set + ": ");
+    var formattedSkillList = HTMLskilllist.replace("%data%", e.list + ".");
+    console.log(formattedSkillList);
+    $('#summary').append(formattedSkill);
+    $('.skill-set').last().append(formattedSkillList);
+
+  })
+}
 
 // Personal education section
 
@@ -215,6 +245,7 @@ projects.display = function(){
 //displaying all five sections
 bio.display();
 bio.displayFooter();
+summary.display();
 work.display();
 education.display();
 projects.display();
@@ -222,20 +253,48 @@ projects.display();
 
 $("#mapDiv").append(googleMap);
 
-// Provide Interactivity with resume sections
-// toggle work section
-var workSection = $("#work-section");
-workSection.click(function(){
-  $('.work-entry').toggle();
+// Provide quick navigation to resume
+var summaryLink = $('#summary-link');
+summaryLink.on('click',function(){
+  $('html, body').animate({ scrollTop: 0 }, 1000);
 });
 
-//toggle education section
-var educationSection = $('#education-section');
-educationSection.click(function(){
-  $('.education-entry').toggle();
-});
-//toggle project section
-var projectSection = $("#project-section");
-projectSection.click(function(){
-  $('.project-entry').toggle();
-});
+var workObj = { jq: $('#work-link'), 
+                 section: "#workExperience" },
+    educationObj = { jq: $('#education-link'),
+                      section: "#education" },
+    projectObj = { jq: $('#projects-link'),
+                    section: "#projects" };
+
+[workObj,educationObj,projectObj].forEach(function(e){
+  e.jq.on('click', function(){
+    scrollToSection(e.section,1000);
+  })
+})
+
+
+function scrollToSection(id, ms){
+  var position = $(id).offset().top;
+  $('html, body').animate({ scrollTop: position}, ms);
+
+}
+
+var navMenu = $('.menu');
+var navMenuOriginalPosition = $('.menu').offset().top;
+
+
+// Allow navigation to stay on page whereever user may scroll
+var adjustNavMenu = function(){
+  var currentPosition = $(window).scrollTop();
+  if(currentPosition > navMenuOriginalPosition){
+    navMenu.addClass('fixed-position expand-bottom-margin');
+  }else{
+    navMenu.removeClass('fixed-position expand-bottom-margin');
+  }
+}
+
+$(window).scrollTop(0);
+$(window).scroll(adjustNavMenu);
+
+
+

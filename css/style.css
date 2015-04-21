@@ -8,7 +8,7 @@
   overflow: auto;
 }
 
-.education-entry, .work-entry, .project-entry {
+.summary-message, .education-entry, .work-entry, .project-entry {
   padding-left: 5%;
   padding-right: 5%;
 }
@@ -73,9 +73,10 @@ p {
 }
 
 .block-link {
-  color: #1199C3;
+  color: #619664;
   text-decoration: none;
   margin-top: 10px;
+  font-size: x-large;
   display: block;
 }
 
@@ -118,14 +119,14 @@ p {
   background-color: #619664;
 }
 
-/* TODO: Replace with image later */
+.section {
+  padding-top: 15%;
+  padding-bottom: 10%;
+}
+
 .section-title {
   text-decoration: none;
   color: #999999;
-}
-
-.section-title:hover{
-  color: #F5AE23;
 }
 
 #header {
@@ -186,24 +187,52 @@ span {
 }
 
 .menu {
-  display: flex;
-  justify-content: space-around;
+  background-color: #619664;
+  padding-top: 2.5%;
+  padding-left: 0;
+  left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
 }
 
-.menu a {
+.fixed-position {
+  position: fixed;
+  top: 0;
+}
+
+.expand-bottom-margin {
+  margin-bottom: 30px;
+}
+
+.flex-item a {
   color: #EAF7CE;
   text-decoration: none;
-  margin-top: 10px;
   font-weight: bolder;
   font-size: x-large;
 }
 
-.menu a:hover {
+.flex-item a:hover {
   color: #F5AE23;
 }
 
 #letsConnect {
   text-align: center;
+}
+
+.summary-message {
+  font-style: italic;
+  font-size: 18px;
+  color: #333333;
+  line-height: 28px;
+}
+
+.shadow {
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow:         3px 3px 5px 6px #ccc;
 }
 
 @media only screen and (max-width: 1024px) {
