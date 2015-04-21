@@ -223,16 +223,19 @@ span {
 }
 
 .summary-message {
-  font-style: italic;
   font-size: 18px;
   color: #333333;
   line-height: 28px;
 }
 
 .shadow {
-  -moz-box-shadow:    3px 3px 5px 6px #ccc;
-  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
-  box-shadow:         3px 3px 5px 6px #ccc;
+  -moz-box-shadow: 3px 3px 0px 3px #ccc;
+  -webkit-box-shadow: 3px 3px 0px 3px #ccc;
+  box-shadow: 3px 3px 0px 3px #ccc;
+}
+
+.skill-set {
+  color: #619664;
 }
 
 @media only screen and (max-width: 1024px) {
