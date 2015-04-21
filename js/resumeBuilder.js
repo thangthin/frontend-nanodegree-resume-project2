@@ -22,7 +22,7 @@ var bio = {
     location:"Boston, MA"
   },
   welcomeMessage: PERSONAL_MESSAGE,
-  skills:["programming","web development","responsive design", "software engineering"],
+  skills:["programming","web development","software engineering", "information security"],
   biopic:"images/profilepic.jpg",
 };
 
@@ -178,21 +178,31 @@ var work = {
       title:"Information Assurance Analyst II",
       location:"Woburn, MA",
       dates: "2013 - 2014",
-      description: "Who moved my cheese cheesy feet cauliflower chees. Queso taleggio when the cheese comes out everybody's happy airdale ricotta cheese and wine paneer camember de normandie. Swiss mazzarella cheese slices feta fromage fraise airdale swiss cheesecake. Hard cheese blue castello halloumi parmesan say cheese stinking bishop jarlsberg."
+      description: "Liased as the primary security representative with engineers and users of classified "+
+      "systems. Key contributions during tenure included the implementation of bash and python scripting "+
+      "for security log collections. Developed python scripts using regular expression to assist with "+
+      "security log analysis and streamlined what was a manual collection and reviewing process"
     },
     {
       employer:"Raytheon IADC",
       title:"Information Assurance Analyst",
       location:"Andover, MA",
       dates: "2011 - 2013",
-      description: "Who moved my cheese cheesy feet cauliflower chees. Queso taleggio when the cheese comes out everybody's happy airdale ricotta cheese and wine paneer camember de normandie. Swiss mazzarella cheese slices feta fromage fraise airdale swiss cheesecake. Hard cheese blue castello halloumi parmesan say cheese stinking bishop jarlsberg."
+      description: "Responsible for ensuring the compliance of information systems "+
+      "used for classified programs in accordance with the NISPOM, ISFO, and ODAA baseline "+
+      "standards. Key contributions during tenure included the creation of several security profiles "+
+      "for classified programs resulting in the certification and accreditation of the associated "+
+      "programs. Assisted the operation security team in achieving the highest possible rating "+
+      "in multiple DSS Assessments as part of the IA team."
     },
     {
       employer:"Manulife Financial",
       title:"Program Analyst Intern",
       location:"Boston, MA",
       dates: "2010 - 2010",
-      description: "Who moved my cheese cheesy feet cauliflower chees. Queso taleggio when the cheese comes out everybody's happy airdale ricotta cheese and wine paneer camember de normandie. Swiss mazzarella cheese slices feta fromage fraise airdale swiss cheesecake. Hard cheese blue castello halloumi parmesan say cheese stinking bishop jarlsberg."     
+      description: "Worked alongside developers and project manager during the development cycle of its"+
+      "claim system. Assisted in project planning. "+
+      ""     
     },
     {
       employer:"Merrill Lynch",
