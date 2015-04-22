@@ -212,10 +212,9 @@ var work = {
       title:"Accounting Application Intern",
       location:"Jersey City, NJ",
       dates: "2009 - 2009",
-      description: "Worked alongside developers and project manager during the development cycle of "+
-      "company's claim system. Assisted in project planning, documentation, and facilitated between "+
-      "developers and users of the system. Drew up test cases and assisted with reproduction of triage "+
-      "issue in test environment."     
+      description: "Interned with company's accountant team. Responsible for reports generation "+
+      "and analysis of account discrepancies. Wrote VBA scripts to assist with the analysis and "+
+      "formatting of financial data pulled from corporate servers."     
     }
   ]
 };
