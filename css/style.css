@@ -135,12 +135,14 @@ p {
 }
 
 .flex-box {
+  display: ms-flexbox;
   display: -webkit-flex;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 10px;
+  -webkit-justify-content: space-around;
 }
 
 .center-content {
