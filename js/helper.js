@@ -38,27 +38,27 @@ var HTMLskilllist = '<span class="skill-list summary-message">%data%</span>';
 
 
 var HTMLworkStart = '<div class="work-entry"></div>';
-var HTMLworkEmployer = '<a class="block-link" href="#">%data%';
+var HTMLworkEmployer = '<a class="block-link" href="#" onclick="return false">%data%';
 var HTMLworkTitle = ' - %data%</a>';
 var HTMLworkDates = '<div class="date-text">%data%</div>';
 var HTMLworkLocation = '<div class="location-text">%data%</div>';
 var HTMLworkDescription = '<p><br>%data%</p>';
 
 var HTMLprojectStart = '<div class="project-entry"></div>';
-var HTMLprojectTitle = '<a class="block-link" href="#">%data%</a>';
+var HTMLprojectTitle = '<a class="block-link pj" href="#" target="_blank">%data%</a>';
 var HTMLprojectDates = '<div class="date-text">%data%</div>';
 var HTMLprojectDescription = '<p><br>%data%</p>';
 var HTMLprojectImage = '<img src="%data%">';
 
 var HTMLschoolStart = '<div class="education-entry"></div>';
-var HTMLschoolName = '<a class="block-link schoolName" href="#">%data%';
+var HTMLschoolName = '<a class="block-link schoolName" href="#" target="_blank">%data%';
 var HTMLschoolDegree = ' -- %data%</a>';
 var HTMLschoolDates = '<div class="date-text">%data%</div>';
 var HTMLschoolLocation = '<div class="location-text">%data%</div>';
 var HTMLschoolMajor = '<em><br>Major: %data%</em>';
 
 var HTMLcertHeading = '<h2 id="certificate-section"><a class="section-title" href="#" onclick="return false">Certificates</a></h2>';
-var HTMLcertTitle = '<a class="block-link certTitle" href="#">%data%';
+var HTMLcertTitle = '<a class="block-link certTitle" href="#" target="_blank">%data%';
 var HTMLcertSchool = ' - %data%</a>';
 var HTMLcertDate = '<div class="date-text">%data%</div>';
 
