@@ -23,7 +23,7 @@ var bio = {
   },
   welcomeMessage: PERSONAL_MESSAGE,
   skills:["programming","web development","software engineering", "information security"],
-  biopic:"images/profilepic.jpg",
+  biopic:"",
 };
 
 // display bio section by format and add to html all the bio properties
@@ -35,14 +35,14 @@ bio.display = function(){
   var formattedEmail = HTMLemail.replace("%data%",this.contacts.email);
   var formattedGithub = HTMLgithub.replace("%data%",this.contacts.github);
   var formattedLocation = HTMLlocation.replace("%data%",this.contacts.location);
-  var formattedBioPic = HTMLbioPic.replace("%data%",this.biopic);
+  //var formattedBioPic = HTMLbioPic.replace("%data%",this.biopic);
 
   $("#header").prepend(formattedRole);
   $("#header").prepend(formattedName);
   $("#topContacts").append(formattedEmail);
   $("#topContacts").append(formattedGithub);
   $("#topContacts").append(formattedLocation);
-  $("#header").append(formattedBioPic);
+  //$("#header").append(formattedBioPic);
   $("#header").append(formattedWelcomeMsg);
 
 
