@@ -2,15 +2,15 @@
 // Personal Bio section
 var PERSONAL_MESSAGE = "Hi! I'm an aspiring software developer. "+
   "Having been exposed to how practical programming was in my previous job, "+
-  "I've decided to persue a career in it. My hope is to work in a position that will allow me to fullfill my natural interest in "+
+  "I've decided to pursue a career in it. My hope is to work in a position that will allow me to fulfill my natural interest in "+
   "learning and building fascinating things.";
 var SUMMARY = "I'm a web developer and a tinkerer. In my former role, I was a security analyst for a government contractor, doing "+
 "compliance and system administration work for classified programs. Having been exposed to how novel, practical and beautiful programming is, I've "+
-"decided to pursue it as a career. Leaving behind practices of security protocols, access controls, log analysis, and system adminstration for "+
+"decided to pursue it as a career. Leaving behind practices of security protocols, access controls, log analysis, and system administration for "+
 "my new found passion of web application development. Trading in pages and pages of industrial manuals for pages and pages and pages of "+
-"programming and api documentations... <i>Oh, the fun never stops.</i> "+
+"programming and API documentations... <i>Oh, the fun never stops.</i> "+
 "Since I've left my previous position, I've picked up web development, responsive web design, web optimization and working with technologies "+
-" such as html, css, javascript, python, databases, git, and other fullstack development tools."
+" such as HTML, CSS, JavaScript, Python, databases, git, and other full-stack development tools."
 
 var bio = {
   name:"Thang Thin",
